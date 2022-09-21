@@ -20,8 +20,9 @@ public class DeckOfCardsMain {
 		deckOfCards.shuffleCards();
 		//deckOfCards.assignCards();
 		deckOfCards.assign9CardsAmong4Players();
+		
+		System.out.println("Dispaying distribution of 9 cards among 4 players");
 		deckOfCards.display();
-
 	}
 
 }

@@ -66,6 +66,5 @@ public class CompanyShares implements CommercialDataProcessing{
 	public void printReport() {
 		System.out.println("Stock Symbol : "+stockSymbol+"\nNumber of Shares : "+numberOfShares+"\nValue of each share : "+valueOfShare+"\nAmount left : "+amount);
 		
-	}
-				
+	}			
 }

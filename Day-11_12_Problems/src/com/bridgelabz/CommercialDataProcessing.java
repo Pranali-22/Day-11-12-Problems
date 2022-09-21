@@ -8,12 +8,12 @@ package com.bridgelabz;
  *
  */
 public interface CommercialDataProcessing {
-	double valueOf();
+	abstract double valueOf();
 	
-	void buyShare(double amount, String symbol);
+	abstract void buyShare(double amount, String symbol);
 	
-	void sellShare(double amount, String symbol);
+	abstract void sellShare(double amount, String symbol);
 	
-	void printReport();
+	abstract void printReport();
 	
 }

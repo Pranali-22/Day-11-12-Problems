@@ -8,7 +8,6 @@ package com.bridgelabz;
  *
  */
 public class StockPortfolio {
-
 	/**
 	 * @param args
 	 */

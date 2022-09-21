@@ -8,13 +8,6 @@ import java.util.*;
  * @author Dell
  *
  */
-//Write a Program DeckOfCards.java, to initialize deck of cards having suit
-//("Clubs", "Diamonds", "Hearts", "Spades") &
-//Rank ("2", "3", "4", "5", "6", "7", "8",
-//"9", "10", "Jack", "Queen", "King", "Ace"). Shuffle the cards using Random
-//method and then distribute 9 Cards to 4 Players and Print the Cards received by
-//the 4 Players using 2D Array...
-
 
  class DeckOfCards {
  
@@ -44,8 +37,8 @@ import java.util.*;
  
   // Constructor of class
   public DeckOfCards() {
-      for(int i=0;i<deck.length;i++) {  // Confusing
-          deck[i] = i; // 0 to 51
+      for(int i=0;i<deck.length;i++) {  
+          deck[i] = i; 
       }
   }
  
@@ -53,31 +46,25 @@ import java.util.*;
  
   void shuffleCards() {
       for(int i=0;i<deck.length;i++) {
-          /// 1 to 52
-          int randomIndexValue = (int)(Math.random()*deck.length);
-      
-          // Type casting  // 1 to 52
          
-          // deck[0] = 0
-          // deck[1] = 1
+          int randomIndexValue = (int)(Math.random()*deck.length);
+     
           int temp = deck[i];
           deck[i] = deck[randomIndexValue];
-          deck[randomIndexValue]=temp;
-         
-          // Diamond, suits,etc
-          // 2,3,4,5,6,7,8 etc
-         
-          String suit = suitsArray[deck[i]/13];
+          deck[randomIndexValue]=temp;         
+          
           // Random function from 1 to 4
-          String rank = ranksArray[deck[i]%13];
+          String suit = suitsArray[deck[i]/13];
+         
           // Random function 1 to 13
+          String rank = ranksArray[deck[i]%13];          
          
           deckOFCards[i] = rank + "-" + suit;           
       }
   }
  
-  // =============// 3  assign the cards to player  
-  // Each player 9 Card 
+   
+  // assing each player 9 Card 
  
   void assignCards() {
       // Array name is players  // Loop will 4 * 13 = 52
@@ -93,18 +80,9 @@ import java.util.*;
   
   //Assign 9 cards among 4 player
    
-  void assign9CardsAmong4Players() {
-
-	// 4 rows and 9 columns
-	// 9 cards only
-	// 9/4 = min one card and max 3 cards
-	// player 1 = 1 card
-	// player 2 = 3 card
-	// player 3 = 2 cards
-	// player 4 = 3 cards
+  void assign9CardsAmong4Players() {	
 
 	// 4 * 9 matrix
-
 
 		ArrayList<Integer> randomIndex = new ArrayList<Integer>();
 		randomIndex.add(1);
@@ -122,7 +100,7 @@ import java.util.*;
 
   	}
 
-	///===============// 4 Display the assigned card in 2d array
+	/// 4 Display the assigned card in 2d array
 
 	void display() {
 		for(int i=0;i<noOfPlayers;i++) {

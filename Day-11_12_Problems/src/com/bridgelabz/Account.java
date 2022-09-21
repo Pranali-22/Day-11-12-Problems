@@ -7,8 +7,7 @@ package com.bridgelabz;
  * @author Dell
  *
  */
-public class Account {
-	
+public class Account {	
 	private int accountNumber;
 	private String customerName;
 	private double balance;

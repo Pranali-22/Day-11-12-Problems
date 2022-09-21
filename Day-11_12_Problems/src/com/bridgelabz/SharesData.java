@@ -10,7 +10,6 @@ import java.util.Scanner;
  *
  */
 public class SharesData {
-
 	/**
 	 * @param args
 	 */
